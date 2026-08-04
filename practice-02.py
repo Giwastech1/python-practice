@@ -79,3 +79,14 @@ def filter_age(students_data):
             result.append(student)
     return result
 print(filter_age(students))
+
+
+sorted_age = sorted(students,key=lambda age:age["age"],reverse=True)
+print(sorted_age)
+
+
+def sortAge(studentData):
+    return studentData["age"]
+
+sortByAge = sorted(students,key=sortAge)
+print(sortByAge)
