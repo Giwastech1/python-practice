@@ -58,3 +58,24 @@ def filter_price(price):
 
 filtered_price = list(filter(filter_price,menu_items))
 print(filtered_price)
+
+
+students = [
+    {"name": "John", "age": 20},
+    {"name": "Mary", "age": 22},
+    {"name": "Peter", "age": 19},
+    {"name": "Giwa", "age": 18},
+    {"name": "Tosin", "age": 15}
+]
+
+grater_than_nineteen = list(filter(lambda age:age["age"]>19,students))
+print(grater_than_nineteen)
+
+# Filter using a single function
+def filter_age(students_data):
+    result = []
+    for student in students_data:
+        if student["age"] >= 15 and student["age"] <=18:
+            result.append(student)
+    return result
+print(filter_age(students))
