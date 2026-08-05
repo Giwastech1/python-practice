@@ -126,3 +126,8 @@ def calculate_water(n):
 total_amount = calculate_water(5)
 print()
 print(f"The total amount of the water needed is {total_amount}ml")
+
+#List methods
+flavors = ["Vanilla", "Caramel", "Hazelnut"]
+flavors.append("mint")
+print(flavors)
