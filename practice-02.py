@@ -17,7 +17,7 @@ print(printInfo)
 def multiplyByTwo(number):
     return number*2
 
-
+# map through list
 num = [2,4,10]
 result = map(multiplyByTwo,num)
 print(list(result))
@@ -26,15 +26,15 @@ numbers = [2,4,10]
 result = list(map(lambda num:num*4,numbers))
 print(result)
 
-
+# function to return numbers greater than or equal to 10
 def deleteItem(num):
     return num >= 10
-
+# filyter numbers
 x = [2,7,10,20,17]
 result = filter(deleteItem,x)
 print(list(result))
 
-
+# filter using lambda
 numbers = [20,17,11,100,23,24,8,5]
 grater_than_eleven = filter(lambda x:x>11,numbers)
 print(list(grater_than_eleven))
