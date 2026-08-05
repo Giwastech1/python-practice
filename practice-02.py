@@ -112,3 +112,17 @@ def calculate_water(n):
     calculate_water(n-1)
 
 calculate_water(3)
+print()
+
+# print total of all recursion value
+def calculate_water(n):
+    amount = 10
+    if n==0:
+        return 0
+    amount*=n
+    print(f"The amount of water needed to clean the spot is {amount}ml")
+    return amount + calculate_water(n-1)
+
+total_amount = calculate_water(5)
+print()
+print(f"The total amount of the water needed is {total_amount}ml")
