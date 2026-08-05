@@ -90,3 +90,12 @@ def sortAge(studentData):
 
 sortByAge = sorted(students,key=sortAge)
 print(sortByAge)
+
+#exercise
+even_numbers = [2,4,6,8,10]
+even_multiply = list(map(lambda x:x*2,even_numbers))
+print(even_multiply)
+
+#list comprehension
+even_multiply = [num*2 for num in even_numbers]
+print(even_multiply)
