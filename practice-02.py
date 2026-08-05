@@ -99,3 +99,16 @@ print(even_multiply)
 #list comprehension
 even_multiply = [num*2 for num in even_numbers]
 print(even_multiply)
+
+
+# Recursion
+def calculate_water(n):
+    amount = 10
+    if (n == 0):
+        print(f"The amount of water needed to clean the spot is {0}ml")
+        return
+    amount*=n
+    print(f"The amount of water needed to clean the spot is {amount}ml")
+    calculate_water(n-1)
+
+calculate_water(3)
