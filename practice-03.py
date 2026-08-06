@@ -23,3 +23,23 @@ print(others)
 # Ommit name/names
 first_name,_,second_name,_, = qualified_name
 print(second_name)
+
+
+# Dictionary
+my_data = {
+    "name": "Giwa",
+    "age": 16,
+    "school": "Learn2earn",
+    "course": "Software engineering"
+}
+friend = "Hassan"
+
+print(my_data)
+my_age = my_data["age"]
+print(my_age)
+
+print(friend)
+friend = my_data.get("friend","not available")
+print(friend)
+
+print(my_data.get("age"))
