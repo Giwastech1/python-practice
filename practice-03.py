@@ -81,3 +81,12 @@ print(student_name)
 
 student_name.remove("Giwa")
 print(student_name)
+print()
+
+# List  comprehension
+price_list = [1,2,3,10]
+new_price = list(map(lambda price: price * 2, price_list))
+print(new_price)
+
+price_list_comprehension = [price*2 for price in price_list]
+print(price_list_comprehension)
