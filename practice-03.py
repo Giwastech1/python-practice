@@ -51,7 +51,33 @@ print("mango" in fruit)
 print("Mango" in fruit)
 
 print(fruit)
-
+print()
 set_a = {"Vanilla", "Caramel", "Mocha"}
 set_b = {"Caramel"}
 print(set_a - set_b)
+print()
+first_set = {"school","book","pen","eraser"}
+second_set = {"book","sharpner","eraser"}
+
+combine_list = first_set | second_set
+print(combine_list)
+
+mutual_list = first_set & second_set
+print(mutual_list)
+
+print(first_set & second_set)
+print(first_set | second_set)
+print()
+# set add and update
+student_name = {"Giwa","Ajayi","Wale","Samuel"}
+student_name.add("Bola")
+print(student_name)
+
+# student_name.update(["ibrahim","ismail"])
+# print(student_name)
+add_name = ["ibrahim","ismail"]
+student_name.update(add_name)
+print(student_name)
+
+student_name.remove("Giwa")
+print(student_name)
