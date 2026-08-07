@@ -43,3 +43,15 @@ friend = my_data.get("friend","not available")
 print(friend)
 
 print(my_data.get("age"))
+
+# set
+fruit = {"Apple","Mango","Banana"}
+print("Apple" in fruit)
+print("mango" in fruit)
+print("Mango" in fruit)
+
+print(fruit)
+
+set_a = {"Vanilla", "Caramel", "Mocha"}
+set_b = {"Caramel"}
+print(set_a - set_b)
