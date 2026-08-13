@@ -20,6 +20,8 @@ giwaMateria = SchoolMateria()
 print(giwaMateria.pen,giwaMateria.book)
 print(giwaMateria.book)
 
+
+# uisng dunder
 class MyInfo:
     def __init__(self, name,age):
         self.name = name
