@@ -31,3 +31,15 @@ class MyInfo:
     
 person = repr(MyInfo("Giwas",22))
 print(person)
+
+#Exercise
+
+class WaterStorex:
+    def __init__(self, capacity):
+        self.waterCapacity = capacity
+
+    def toFill(self,filling):
+        print(f"the capacity is {self.waterCapacity} and the remaining space is {filling}")
+
+waterLevel = WaterStorex(20)
+waterLevel.toFill(14)
