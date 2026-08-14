@@ -102,5 +102,32 @@ class finalName(StudentName):
     def final(self):
         return "Giwa Toheeb"
 
+student = StudentName()
+print(student.initialName()) 
+
 student = finalName()
-print(student.final)
+print(student.final())
+
+
+class SchoolName:
+    def __init__ (self,schName):
+        self.schName = schName
+        self.institution = "Unilorin"
+        self.isService = True
+
+class SecSchool(SchoolName):
+    pass
+
+school1 = SchoolName("Ajoke")
+print(school1.schName)
+print(school1.isService)
+
+school = SecSchool("Ajoke Model School")
+print(school.schName)
+print(school.isService)
+print(school.institution)
+print(school1.institution)
+print()
+
+institution = SecSchool("Whatever I decide")
+print(institution.institution)
