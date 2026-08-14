@@ -58,3 +58,49 @@ cup1 = CardboardCup("Giwa",22)
 print(cup1.isClean)
 
 # inheritance and super
+class Animal:
+     def eat(sef):
+         print("Eating")
+
+class Dog(Animal):
+    def bark(self):
+        print("The dog is barking")
+
+class Cat(Animal):
+    def meow(self):
+        print("The cat is meowing")
+
+dog = Animal()
+dog.eat()
+dog = Dog()
+dog.bark()
+cat = Animal()
+cat.eat()
+cat = Cat()
+cat.meow()
+
+
+class CardboardCup:
+    def __init__(self,size):
+        self.size = size
+        self.isClean = False
+        self.contents_ounces = 0.0
+
+class ChildClass(CardboardCup):
+    def child(self):
+        pass
+
+cup = ChildClass("Large")
+print(cup.size)
+print()
+
+class StudentName:
+    def initialName(self):
+        return "Giwa"
+
+class finalName(StudentName):
+    def final(self):
+        return "Giwa Toheeb"
+
+student = finalName()
+print(student.final)
