@@ -46,3 +46,15 @@ class WaterStorex:
             print(f"the capacity is {self.waterCapacity} and the remaining space is {self.waterCapacity-filling}")
 waterLevel = WaterStorex(20)
 waterToFill = waterLevel.toFill(41) 
+
+# initialize with passed argument
+class CardboardCup:
+    def __init__(self,owner,size):
+        self.owner = owner
+        self.size = size
+        self.isClean = True
+
+cup1 = CardboardCup("Giwa",22)
+print(cup1.isClean)
+
+# inheritance and super
