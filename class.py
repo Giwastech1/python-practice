@@ -39,7 +39,10 @@ class WaterStorex:
         self.waterCapacity = capacity
 
     def toFill(self,filling):
-        print(f"the capacity is {self.waterCapacity} and the remaining space is {filling}")
-
+       # print(f"the capacity is {self.waterCapacity} and the remaining space is {filling}")
+       if (filling > self.waterCapacity):
+           print("The water will spill. Acction blocked")
+       else:
+            print(f"the capacity is {self.waterCapacity} and the remaining space is {self.waterCapacity-filling}")
 waterLevel = WaterStorex(20)
-waterLevel.toFill(14)
+waterToFill = waterLevel.toFill(41) 
