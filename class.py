@@ -131,3 +131,44 @@ print()
 
 institution = SecSchool("Whatever I decide")
 print(institution.institution)
+
+#Override parent class attribute
+class BankDetail:
+    def __init__(self,accName):
+        self.accName = accName
+        self.balance = 5000
+    def latestDetail(self):
+        self.balance = 6500
+
+initial = BankDetail("Giwa Muniroh")
+userBalance = initial.balance
+print(userBalance)
+
+initial.latestDetail()
+print(initial.balance)
+
+#super
+class Food:
+    def favFood(sef):
+        return "Jollof rice"
+
+class Fav(Food):
+    def favFood(sef):
+        sen = super().favFood()
+        return sen+" is delicious"
+
+
+myFood = Fav()
+print(myFood.favFood())
+
+class CardboardCup:
+    def __init__(self, ounces):
+        self.contents_ounces = float(ounces)
+        
+    # __len__ must return a standard integer
+    def __len__(self):
+        return int(self.contents_ounces)
+
+my_cup = CardboardCup(8.5)
+current_volume = len(my_cup)
+print(current_volume)
