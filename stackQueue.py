@@ -56,7 +56,7 @@ class FriendClass:
         return self.myFriend
 
     def deleteFriend(self):
-        self.myFriend.pop(0)
+        self.myFriend.pop()
         return self.myFriend
 
 
@@ -72,3 +72,10 @@ print(friendList.myFriend)
 
 friendList.deleteFriend()
 print(friendList.myFriend)
+
+#Try and catch in python
+try:
+    num = int(input("Enter a number: "))
+    print(f"Your input is {num}")
+except ValueError:
+    print("Enter a valid number")
