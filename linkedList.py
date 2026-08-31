@@ -13,7 +13,12 @@ cup_two.next = cup_three
 cup_three.next = cup_four
 
 print(cup_one.next.next.data)
-
+print()
+print(cup_two.next.data)
+print()
+cup_two.next.data = 12
+print(cup_two.next.data)
+print()
 current_node = cup_one
 while(current_node is not None):
     print(current_node.data)
