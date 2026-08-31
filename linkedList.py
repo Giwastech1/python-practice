@@ -3,13 +3,18 @@ class CupNode:
         self.data = data
         self.next = None
 
-headCup = CupNode(1)
-cupTwo = CupNode(2)
-cupThree = CupNode(3)
-cupFour = CupNode(5)
+cup_one = CupNode(1)
+cup_two = CupNode(2)
+cup_three = CupNode(3)
+cup_four = CupNode(4)
 
-headCup.next = cupTwo
-cupTwo.next = cupThree
-cupThree.next = cupFour
+cup_one.next = cup_two
+cup_two.next = cup_three
+cup_three.next = cup_four
 
-print(headCup.next.next.next.data)
+print(cup_one.next.next.data)
+
+current_node = cup_one
+while(current_node is not None):
+    print(current_node.data)
+    current_node = current_node.next
