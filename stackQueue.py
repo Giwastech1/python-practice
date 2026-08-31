@@ -73,9 +73,10 @@ print(friendList.myFriend)
 friendList.deleteFriend()
 print(friendList.myFriend)
 
-#Try and catch in python
-try:
-    num = int(input("Enter a number: "))
-    print(f"Your input is {num}")
-except ValueError:
-    print("Enter a valid number")
+
+transactions = [500, 1200, 300, 800]
+total = 0
+for amount in transactions:
+    total+=amount
+
+print(total)
